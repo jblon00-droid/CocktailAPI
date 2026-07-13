@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Explorer</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__container">
+            <div class="nav__row">
+                <img class="logo" src="https://www.thecocktaildb.com/images/logo.png" alt="CocktailDB logo">
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="#">Home</a></li>
+                    <li class="nav__link"><a href="#">Search</a></li>
+                    <li class="nav__link"><a href="#">Classic</a></li>
+                    <li class="nav__link"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="cocktails">
+        <div class="cocktails__container">
+            <div class="cocktails__row">
+                <h1 class="cocktails__title">Cocktail Explorer</h1>
+                <p class="cocktails__description">Discover margaritas, classic drinks, and cocktail details from the CocktailDB API.</p>
+                <label class="filter__label" for="sortSelect">
+                    Sort cocktails:
+                    <select id="sortSelect" class="filter__select">
+                        <option value="alphabetical">Alphabetical</option>
+                        <option value="ingredients">Ingredients</option>
+                    </select>
+                </label>
+                <div class="cocktails__card-grid"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div class="footer__container">
+        <div class="row">
+            <p>&copy; 2024 Cocktail Explorer. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</html>
