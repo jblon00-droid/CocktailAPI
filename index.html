@@ -26,13 +26,20 @@
             <div class="cocktails__row">
                 <h1 class="cocktails__title">Cocktail Explorer</h1>
                 <p class="cocktails__description">Discover margaritas, classic drinks, and cocktail details from the CocktailDB API.</p>
-                <label class="filter__label" for="sortSelect">
-                    Sort cocktails:
-                    <select id="sortSelect" class="filter__select">
-                        <option value="alphabetical">Alphabetical</option>
-                        <option value="ingredients">Ingredients</option>
-                    </select>
-                </label>
+                <div class="filter__label">
+                    <label for="sortSelect">
+                        Sort cocktails:
+                        <select id="sortSelect" class="filter__select">
+                            <option value="unsorted">Unsorted</option>
+                            <option value="alphabetical">Alphabetical</option>
+                            <option value="ingredients">Ingredients</option>
+                        </select>
+                    </label>
+                    <div class="nav__search" id="searchPanel">
+                        <input id="searchInput" type="text" placeholder="Search cocktails" />
+                        <button id="searchButton" type="button">Search</button>
+                    </div>
+                </div>
                 <div class="cocktails__card-grid"></div>
             </div>
         </div>
